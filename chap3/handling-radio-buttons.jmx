@@ -9,7 +9,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="server" elementType="Argument">
             <stringProp name="Argument.name">server</stringProp>
-            <stringProp name="Argument.value">jmeterbook.cloudfoundry.com</stringProp>
+            <stringProp name="Argument.value">jmeterbook.aws.af.cm</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -133,7 +133,7 @@
               </elementProp>
               <elementProp name="Referer" elementType="Header">
                 <stringProp name="Header.name">Referer</stringProp>
-                <stringProp name="Header.value">http://jmeterbook.berinle.cloudfoundry.me/</stringProp>
+                <stringProp name="Header.value">http://jmeterbook.aws.af.cm/</stringProp>
               </elementProp>
               <elementProp name="Accept-Charset" elementType="Header">
                 <stringProp name="Header.name">Accept-Charset</stringProp>
@@ -205,7 +205,7 @@
               </elementProp>
               <elementProp name="Origin" elementType="Header">
                 <stringProp name="Header.name">Origin</stringProp>
-                <stringProp name="Header.value">http://jmeterbook.berinle.cloudfoundry.me</stringProp>
+                <stringProp name="Header.value">http://jmeterbook.aws.af.cm</stringProp>
               </elementProp>
               <elementProp name="User-Agent" elementType="Header">
                 <stringProp name="Header.name">User-Agent</stringProp>
@@ -217,7 +217,7 @@
               </elementProp>
               <elementProp name="Referer" elementType="Header">
                 <stringProp name="Header.name">Referer</stringProp>
-                <stringProp name="Header.value">http://jmeterbook.berinle.cloudfoundry.me/radioForm/index</stringProp>
+                <stringProp name="Header.value">http://jmeterbook.aws.af.cm/radioForm/index</stringProp>
               </elementProp>
               <elementProp name="Accept-Charset" elementType="Header">
                 <stringProp name="Header.name">Accept-Charset</stringProp>
