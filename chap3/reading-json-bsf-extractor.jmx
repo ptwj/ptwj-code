@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.4" jmeter="2.9 r1437961">
+<jmeterTestPlan version="1.2" properties="2.7" jmeter="2.12 r1636949">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -42,7 +42,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/ajax/services/search/web?v=1.0&amp;q=Paris%20Hilton</stringProp>
+          <stringProp name="HTTPSampler.path">/ajax/services/search/web?v=1.0&amp;q=jmeter</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -70,6 +70,25 @@ for (var i = 0; i &lt;= response.responseData.results.length; i++)
    vars.put(&quot;url_&quot; + i, x.url);
 }</stringProp>
             <stringProp name="scriptLanguage">javascript</stringProp>
+          </BSFPostProcessor>
+          <hashTree/>
+          <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor (groovy)" enabled="false">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">import groovy.json.*
+
+// Turn the JSON into an object called &apos;response&apos;
+def response = prev.responseDataAsString
+def json = new JsonSlurper().parseText(response)
+
+vars.put(&quot;url_cnt&quot;, json.responseData.results.size as String);
+
+for (int i = 0; i &lt; json.responseData.results.size; i++)	
+{		
+    def result = json.responseData.results.get(i);
+   	vars.put(&quot;url_&quot; + i, result.url);
+}</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
           </BSFPostProcessor>
           <hashTree/>
         </hashTree>
@@ -106,6 +125,7 @@ for (var i = 0; i &lt;= response.responseData.results.length; i++)
               <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
               <assertionsResultsToSave>0</assertionsResultsToSave>
               <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
             </value>
           </objProp>
           <stringProp name="filename"></stringProp>
