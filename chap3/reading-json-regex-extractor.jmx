@@ -9,7 +9,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="server" elementType="Argument">
             <stringProp name="Argument.name">server</stringProp>
-            <stringProp name="Argument.value">jmeterbook.aws.af.cm</stringProp>
+            <stringProp name="Argument.value">jmeterbook-berinle.rhcloud.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
