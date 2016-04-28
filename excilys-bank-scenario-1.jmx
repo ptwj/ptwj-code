@@ -45,7 +45,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -85,7 +85,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/private/bank/accounts.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/private/bank/accounts.html</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Charset" elementType="Header">
                   <stringProp name="Header.name">Accept-Charset</stringProp>
@@ -119,7 +119,7 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -151,7 +151,7 @@
                 </elementProp>
                 <elementProp name="Origin" elementType="Header">
                   <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com</stringProp>
                 </elementProp>
                 <elementProp name="User-Agent" elementType="Header">
                   <stringProp name="Header.name">User-Agent</stringProp>
@@ -167,7 +167,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/public/login.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/public/login.html</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Encoding" elementType="Header">
                   <stringProp name="Header.name">Accept-Encoding</stringProp>
@@ -181,7 +181,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -221,7 +221,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/public/login.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/public/login.html</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Charset" elementType="Header">
                   <stringProp name="Header.name">Accept-Charset</stringProp>
@@ -240,7 +240,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -276,7 +276,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/private/bank/accounts.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/private/bank/accounts.html</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Charset" elementType="Header">
                   <stringProp name="Header.name">Accept-Charset</stringProp>
@@ -290,7 +290,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -326,7 +326,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/private/bank/account/ACC4/operations.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/private/bank/account/ACC4/operations.html</stringProp>
                 </elementProp>
                 <elementProp name="X-Requested-With" elementType="Header">
                   <stringProp name="Header.name">X-Requested-With</stringProp>
@@ -349,7 +349,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -385,7 +385,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/private/bank/account/ACC4/operations.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/private/bank/account/ACC4/operations.html</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Charset" elementType="Header">
                   <stringProp name="Header.name">Accept-Charset</stringProp>
@@ -399,7 +399,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -435,7 +435,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/private/bank/account/ACC4/transfers/operations.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/private/bank/account/ACC4/transfers/operations.html</stringProp>
                 </elementProp>
                 <elementProp name="X-Requested-With" elementType="Header">
                   <stringProp name="Header.name">X-Requested-With</stringProp>
@@ -458,7 +458,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -494,7 +494,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/private/bank/account/ACC4/transfers/operations.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/private/bank/account/ACC4/transfers/operations.html</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Charset" elementType="Header">
                   <stringProp name="Header.name">Accept-Charset</stringProp>
@@ -508,7 +508,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -544,7 +544,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/private/bank/account/ACC4/operations.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/private/bank/account/ACC4/operations.html</stringProp>
                 </elementProp>
                 <elementProp name="X-Requested-With" elementType="Header">
                   <stringProp name="Header.name">X-Requested-With</stringProp>
@@ -567,7 +567,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -603,7 +603,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/private/bank/account/ACC4/operations.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/private/bank/account/ACC4/operations.html</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Charset" elementType="Header">
                   <stringProp name="Header.name">Accept-Charset</stringProp>
@@ -622,7 +622,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -658,7 +658,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/private/bank/account/ACC5/operations.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/private/bank/account/ACC5/operations.html</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Charset" elementType="Header">
                   <stringProp name="Header.name">Accept-Charset</stringProp>
@@ -672,7 +672,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">excilysbank.aws.af.cm</stringProp>
+            <stringProp name="HTTPSampler.domain">excilysbank-berinle.rhcloud.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -708,7 +708,7 @@
                 </elementProp>
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">http://excilysbank.aws.af.cm/private/bank/account/ACC5/operations.html</stringProp>
+                  <stringProp name="Header.value">http://excilysbank-berinle.rhcloud.com/private/bank/account/ACC5/operations.html</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Charset" elementType="Header">
                   <stringProp name="Header.name">Accept-Charset</stringProp>
