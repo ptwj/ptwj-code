@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.7" jmeter="2.12 r1636949">
+<jmeterTestPlan version="1.2" properties="3.1" jmeter="3.1 r1770033">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -9,7 +9,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="server" elementType="Argument">
             <stringProp name="Argument.name">server</stringProp>
-            <stringProp name="Argument.value">ajax.googleapis.com</stringProp>
+            <stringProp name="Argument.value">api.icndb.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -40,9 +40,9 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/ajax/services/search/web?v=1.0&amp;q=jmeter</stringProp>
+          <stringProp name="HTTPSampler.path">/jokes/random/3?exclude=[explicit]</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -53,26 +53,8 @@
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="script">// Turn the JSON into an object called &apos;response&apos;
-eval(&apos;var response = &apos; + prev.getResponseDataAsString());
-
-// Create a variable called haveBoots_# containing the number of matching URLs
-// For Each Result
-//     Create a variable called haveBoots and assign it the URL
-vars.put(&quot;url_cnt&quot;, response.responseData.results.length);
-
-for (var i = 0; i &lt;= response.responseData.results.length; i++)	
-{		
-    var x = response.responseData.results[i];
-   vars.put(&quot;url_&quot; + i, x.url);
-}</stringProp>
-            <stringProp name="scriptLanguage">javascript</stringProp>
-          </BSFPostProcessor>
-          <hashTree/>
-          <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor (groovy)" enabled="false">
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor (groovy)" enabled="false">
+            <stringProp name="cacheKey"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="script">import groovy.json.*
@@ -80,16 +62,32 @@ for (var i = 0; i &lt;= response.responseData.results.length; i++)
 // Turn the JSON into an object called &apos;response&apos;
 def response = prev.responseDataAsString
 def json = new JsonSlurper().parseText(response)
+vars.put(&quot;jokes_cnt&quot;, json.value.size as String)
 
-vars.put(&quot;url_cnt&quot;, json.responseData.results.size as String);
-
-for (int i = 0; i &lt; json.responseData.results.size; i++)	
+for (int i = 0; i &lt; json.value.size; i++)	
 {		
-    def result = json.responseData.results.get(i);
-   	vars.put(&quot;url_&quot; + i, result.url);
+    def result = json.value.get(i);
+   	vars.put(&quot;joke_&quot; + i, result.joke);
 }</stringProp>
             <stringProp name="scriptLanguage">groovy</stringProp>
-          </BSFPostProcessor>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor (javascript)" enabled="true">
+            <stringProp name="scriptLanguage">javascript</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey"></stringProp>
+            <stringProp name="script">// Turn the JSON into an object called &apos;response&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+
+vars.put(&quot;jokes_cnt&quot;, response.value.length);
+
+for (var i = 0; i &lt;= response.value.length; i++)	
+{		
+    var x = response.value[i];
+   vars.put(&quot;joke_&quot; + i, x.joke);
+}</stringProp>
+          </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
