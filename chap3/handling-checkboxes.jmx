@@ -41,7 +41,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">jmeterbook-berinle.rhcloud.com</stringProp>
+          <stringProp name="HTTPSampler.domain">sampleapp.jmeterbook.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -131,7 +131,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">jmeterbook-berinle.rhcloud.com</stringProp>
+          <stringProp name="HTTPSampler.domain">sampleapp.jmeterbook.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -167,7 +167,7 @@
               </elementProp>
               <elementProp name="Origin" elementType="Header">
                 <stringProp name="Header.name">Origin</stringProp>
-                <stringProp name="Header.value">http://jmeterbook-berinle.rhcloud.com</stringProp>
+                <stringProp name="Header.value">http://sampleapp.jmeterbook.com</stringProp>
               </elementProp>
               <elementProp name="User-Agent" elementType="Header">
                 <stringProp name="Header.name">User-Agent</stringProp>
@@ -179,7 +179,7 @@
               </elementProp>
               <elementProp name="Referer" elementType="Header">
                 <stringProp name="Header.name">Referer</stringProp>
-                <stringProp name="Header.value">http://jmeterbook-berinle.rhcloud.com/form1/create</stringProp>
+                <stringProp name="Header.value">http://sampleapp.jmeterbook.com/form1/create</stringProp>
               </elementProp>
               <elementProp name="Accept-Charset" elementType="Header">
                 <stringProp name="Header.name">Accept-Charset</stringProp>

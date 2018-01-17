@@ -45,7 +45,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">jmeterbook-berinle.rhcloud.com</stringProp>
+          <stringProp name="HTTPSampler.domain">sampleapp.jmeterbook.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
