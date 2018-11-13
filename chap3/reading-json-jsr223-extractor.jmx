@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="3.1" jmeter="3.1 r1770033">
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.2 r1790748">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -38,8 +38,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${server}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/jokes/random/3?exclude=[explicit]</stringProp>
@@ -48,13 +46,14 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree>
           <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor (groovy)" enabled="false">
-            <stringProp name="cacheKey"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="script">import groovy.json.*
@@ -76,15 +75,16 @@ for (int i = 0; i &lt; json.value.size; i++)
             <stringProp name="scriptLanguage">javascript</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
-            <stringProp name="cacheKey"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
             <stringProp name="script">// Turn the JSON into an object called &apos;response&apos;
 eval(&apos;var response = &apos; + prev.getResponseDataAsString());
 
-vars.put(&quot;jokes_cnt&quot;, response.value.length);
+vars.put(&apos;joke_cnt&apos;, response.value.length);
+eval(&apos;var jokes_cnt = &apos; + response.value.length);
 
-for (var i = 0; i &lt;= response.value.length; i++)	
+for (var i = 0; i &lt; jokes_cnt; i++)	
 {		
-    var x = response.value[i];
+   var x = response.value[i];
    vars.put(&quot;joke_&quot; + i, x.joke);
 }</stringProp>
           </JSR223PostProcessor>
@@ -131,5 +131,9 @@ for (var i = 0; i &lt;= response.value.length; i++)
         <hashTree/>
       </hashTree>
     </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
   </hashTree>
 </jmeterTestPlan>
